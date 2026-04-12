@@ -2,22 +2,20 @@
 class Claudeme < Formula
   desc "Description of cxcli tool"
   homepage "https://github.com"
-  url "https://github.com/go-training/helloworld.git"
+  url "https://github.com/containers/ramalama.git" 
   version "0.10"
-  sha256 "95ca4ef67b13604003ed55c752fb9e65b2c0205bc79553bb0f4c622fcd86db6e"
+  sha256 "f278dff467a9dca8b9f3e27ded5f4c55d7d90f732711ac6653806bfda052a051"
   license "MIT"
 
   depends_on "wget" 
 
   def install
     # This builds the project and installs the binary to the Homebrew bin directory
-    system "wget", "https://astral.sh/uv/install.sh"
-    system "chmod", "755", "my-project.sh"
-    system "bash", "my-project.sh"
+    system "bash", "install-uv.sh"
   end
 
   test do
-    system "my-project.sh", "--version"
+    system "#{bin}/my-project.sh", "--version"
   end
 end
 
