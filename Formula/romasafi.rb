@@ -16,7 +16,13 @@ class Romasafi < Formula
   depends_on "atlassian/acli/acli"
   depends_on "uv"
 
-  tap "atlassian/acli"
+  #tap "atlassian/acli"
+
+  system_command("cp", args: [
+                "file://#{Pathname(__FILE__).dirname.parent}/script/roma-safi.sh", "/Users/ikozel/.claude",
+             ])
+
+
 
   test do
     assert_equal "TEST ME PLEAE from Workbrew private Tap!", shell_output("#{bin}/script/roma-safi.sh").strip
