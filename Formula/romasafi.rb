@@ -16,6 +16,8 @@ class Romasafi < Formula
   depends_on "rust"
   depends_on "glab"
   depends_on "uv"
+  depends_on "go" => :recommended # required by cxcli 
+  depends_on "mise" => :recommended # required by cxcli 
 
   #depends_on "atlassian/acli/acli"
   #tap "atlassian/acli"
