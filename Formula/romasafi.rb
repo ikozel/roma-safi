@@ -15,9 +15,9 @@ class Romasafi < Formula
   depends_on "snowflake-cli"
   depends_on "rust"
   depends_on "glab"
-  depends_on "atlassian/acli/acli"
   depends_on "uv"
 
+  #depends_on "atlassian/acli/acli"
   #tap "atlassian/acli"
 
   test do
