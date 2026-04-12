@@ -2,9 +2,9 @@
 class Claudeme < Formula
   desc "Description of cxcli tool"
   homepage "https://github.com"
-  url "git@github.com:ikozel/roma-safi.git" 
+  url "https://github.com/ikozel/roma-safi.git" 
   version "0.10"
-  sha256 "ba364589c87ceae6732174ffcd0bb06eed941c1fdeb503a93c15c440a94023ad"
+  sha256 "c73ff7e5ae46accc57e108205801afc3d517da8c5fea6505979b3aa83afc9281"
   license "MIT"
 
   depends_on "wget" 
