@@ -5,7 +5,7 @@ class Romasafi < Formula
   homepage "https://example.com"
   url "file://#{Pathname(__FILE__).dirname.parent}/script/roma-safi.sh"
   version "0.22"
-  sha256 "50238596fcb2c00d3d146cd9caa6538be4ca997044f027abc5b790c534168480"
+  sha256 "121dbb6d25f29e5006f2d4899d84629a68ee6f40b09b81fe3e68e8b2bb1a80e3"
   license "MIT"
 
   def install
@@ -18,6 +18,9 @@ class Romasafi < Formula
   depends_on "uv"
   depends_on "go" => :recommended # required by cxcli 
   depends_on "mise" => :recommended # required by cxcli 
+
+
+  #depends_on "go" => :build
 
   #depends_on "atlassian/acli/acli"
   #tap "atlassian/acli"
