@@ -1,8 +1,10 @@
-class cxcli < Formula
+
+class Cxcli < Formula
   desc "Description of cxcli tool"
   homepage "https://github.com"
   url "https://github.com/go-training/helloworld.git"
-  sha256 "623722aca3b12dfac0da2acdc1f5468368adbf11a70c9260dbe6d4bd7f4e8fe9"
+  version "0.9"
+  sha256 "b1caf2d2e03422e37ecca8922b110c8e6ce57a9745e97b9042dd9967db44d88e"
   license "MIT"
 
   depends_on "go" => :build
@@ -16,3 +18,4 @@ class cxcli < Formula
     system "#{bin}/my-project", "--version"
   end
 end
+
