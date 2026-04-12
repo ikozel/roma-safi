@@ -1,0 +1,5 @@
+snowflake-cli 
+rust 
+glab 
+atlassian/acli/acli 
+uv
