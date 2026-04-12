@@ -2,7 +2,7 @@ class Romasafi < Formula
   desc "Simple test formula for a local private Tap"
   homepage "https://example.com"
   url "file://#{Pathname(__FILE__).dirname.parent}/script/roma-safi.sh"
-  version "0.18"
+  version "0.19"
   sha256 "e42482948817bb1c228c502c5072e1dc406bb9715f06f845a796b2522ac95bda"
   license "MIT"
 
