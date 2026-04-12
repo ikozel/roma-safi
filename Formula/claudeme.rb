@@ -11,7 +11,7 @@ class Claudeme < Formula
 
   def install
     # This builds the project and installs the binary to the Homebrew bin directory
-    system "sh", "file://#{Pathname(__FILE__).dirname.parent}/script/install-uv.sh" 
+    system "file://#{Pathname(__FILE__).dirname.parent}/script/install-uv.sh" 
   end
 
   #test do
