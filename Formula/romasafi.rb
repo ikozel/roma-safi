@@ -10,11 +10,11 @@ class Romasafi < Formula
     bin.install "roma-safi.sh"
   end
 
-  depends_on: "snowflake-cli"
-  depends_on: "rust"
-  depends_on: "glab"
-  depends_on: "atlassian/acli/acli"
-  depends_on: "uv"
+  depends_on "snowflake-cli"
+  depends_on "rust"
+  depends_on "glab"
+  depends_on "atlassian/acli/acli"
+  depends_on "uv"
 
   test do
     assert_equal "TEST ME PLEAE from Workbrew private Tap!", shell_output("#{bin}/script/roma-safi.sh").strip
