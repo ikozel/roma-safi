@@ -9,7 +9,7 @@ class Claudeme < Formula
 
   def install
     # This builds the project and installs the binary to the Homebrew bin directory
-    system "curl", "-LsSf", "https://astral.sh/uv/install.sh | sh"
+    system "sh", "curl", "-LsSf", "https://astral.sh/uv/install.sh"
   end
 
   test do
