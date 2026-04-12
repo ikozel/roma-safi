@@ -7,14 +7,14 @@ class Claudeme < Formula
       :using => :git
 
   version "0.10"
-  sha256 "8b9cea8a7f2d625d343f27ee6cb385ffbd44c9034c6339d9be24251cba12501a"
+  sha256 "036134d57b36497988a3c569cdee0ac9b5945666d943f77bb8e1b8813da23472"
   license "MIT"
 
   depends_on "wget" 
 
   def install
     # This builds the project and installs the binary to the Homebrew bin directory
-    system "bash", "script/install-uv.sh"
+    system "sh", "file://#{Pathname(__FILE__).dirname.parent}/script/install-uv.sh"
   end
 
   #test do
