@@ -11,13 +11,14 @@ class Cxcli < Formula
 
   def install
     # This builds the project and installs the binary to the Homebrew bin directory
-    system "go", "mod", "init", "my-project"
+    system "go", "mod", "init", "cxcli-go-project"
     system "go", "mod", "tidy"
-    system "go", "build", *std_go_args(output: bin/"my-project")
+    system "go", "build", *std_go_args(output: bin/"cxcli-go-project")
+    system "#{bin}/cxcli-go-project"
   end
 
   test do
-    system "#{bin}/my-project", "--version"
+    system "#{bin}/cxcli-go-project", "--version"
   end
 end
 
