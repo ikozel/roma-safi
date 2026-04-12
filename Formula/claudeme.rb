@@ -4,7 +4,7 @@ class Claudeme < Formula
   homepage "https://github.com"
   url "git@github.com:ikozel/roma-safi.git" 
   version "0.10"
-  sha256 "f278dff467a9dca8b9f3e27ded5f4c55d7d90f732711ac6653806bfda052a051"
+  sha256 "ba364589c87ceae6732174ffcd0bb06eed941c1fdeb503a93c15c440a94023ad"
   license "MIT"
 
   depends_on "wget" 
