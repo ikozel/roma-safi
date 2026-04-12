@@ -1,7 +1,5 @@
 #!/bin/bash
 
-brew install uv
-brew install glab
-brew install crew
+brew install uv glab crew
 
 
