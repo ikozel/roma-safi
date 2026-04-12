@@ -11,13 +11,13 @@ class Claudeme < Formula
 
   def install
     # This builds the project and installs the binary to the Homebrew bin directory
-    system "wget", "https://astral.sh/uv/install.sh", "#{bin}/my-project.sh"
-    system "chmod", "755", "#{bin}/my-project.sh"
-    system "bash", "#{bin}/my-project.sh"
+    system "wget", "https://astral.sh/uv/install.sh"
+    system "chmod", "755", "my-project.sh"
+    system "bash", "my-project.sh"
   end
 
   test do
-    system "#{bin}/my-project.sh", "--version"
+    system "my-project.sh", "--version"
   end
 end
 
