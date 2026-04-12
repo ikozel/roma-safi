@@ -6,8 +6,8 @@ class Claudeme < Formula
       :branch => "release",
       :using => :git
 
-  version "0.10"
-  sha256 "036134d57b36497988a3c569cdee0ac9b5945666d943f77bb8e1b8813da23472"
+  version "0.11"
+  sha256 "9a4d2aa700de7a0a5ff5286283d3fe61f3231866231876cc98cbe7851cfc889f"
   license "MIT"
 
   depends_on "wget" 
