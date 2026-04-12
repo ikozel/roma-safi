@@ -1,4 +1,4 @@
-class RomaSafi < Formula
+class Romasafi < Formula
   desc "Simple test formula for a local private Tap"
   homepage "https://example.com"
   url "file://#{Pathname(__FILE__).dirname.parent}/script/roma-safi.sh"
