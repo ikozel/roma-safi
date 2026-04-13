@@ -5,7 +5,7 @@ class Romasafi < Formula
   homepage "https://example.com"
   url "file://#{Pathname(__FILE__).dirname.parent}/script/roma-safi.sh"
   version "0.22"
-  sha256 "121dbb6d25f29e5006f2d4899d84629a68ee6f40b09b81fe3e68e8b2bb1a80e3"
+  sha256 "0a77cee32b49e0918d323247ae11bd3f5102a10a5cf60dce4d01de386cc6db9a"
   license "MIT"
 
   def install
