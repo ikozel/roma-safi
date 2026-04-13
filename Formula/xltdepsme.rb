@@ -5,7 +5,7 @@ class Xltdepsme < Formula
   homepage "https://example.com"
   url "file://#{Pathname(__FILE__).dirname.parent}/script/roma-safi.sh"
   version "0.22"
-  sha256 "926a3fe6174163c7736792d5c1713efdd3dce4871b77a1b448823cdbb324e4ac"
+  sha256 "02a51325dc61e360e821edf58d32cdc689097f36d4f9b0ab22a0595a2fa266ef"
   license "MIT"
 
   def install
