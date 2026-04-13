@@ -2,7 +2,7 @@
 class Claudeme < Formula
   desc "Description of cxcli tool "
   homepage "https://github.com"
-  url "https://github.com/ikozel/roma-safi.git"
+  url "https://github.com/ikozel/roma-safi/blob/main/script/install-uv.sh"
   version "0.12"
   sha256 "9a4d2aa700de7a0a5ff5286283d3fe61f3231866231876cc98cbe7851cfc889f"
   license "MIT"
@@ -10,12 +10,9 @@ class Claudeme < Formula
   depends_on "wget" 
 
   def install
-    # This builds the project and installs the binary to the Homebrew bin directory
-    system "file://#{Pathname(__FILE__).dirname.parent}/script/install-uv.sh" 
+    bin.install "install-uv.sh" 
+    system "uv -v"
   end
-
-  #test do
-  #  system "#{bin}/my-project.sh", "--version"
-  #end
+  
 end
 
