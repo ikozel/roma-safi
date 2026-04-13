@@ -13,7 +13,6 @@ class Rustme < Formula
     system "cargo", "build"
     system "cargo", "check"
     system "cargo", "test"
-    system "cargo", "run"
   end
 
   #test do
