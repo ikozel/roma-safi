@@ -10,8 +10,10 @@ class Rustme < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args
-    system "#{bin}/my-rust-project"
+    system "cargo", "build", *std_cargo_args
+    system "cargo", "check", *std_cargo_args
+    system "cargo", "test", *std_cargo_args
+    system "cargo", "run", *std_cargo_args
   end
 
   #test do
