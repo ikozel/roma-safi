@@ -26,6 +26,6 @@ class Romasafi < Formula
   #tap "atlassian/acli"
 
   test do
-    assert_equal "TEST ME PLEAE from Workbrew private Tap!", shell_output("#{bin}/script/roma-safi.sh").strip
+    assert_equal "TEST ME PLEASE from Workbrew private Tap!", shell_output("#{bin}/script/roma-safi.sh").strip
   end
 end
